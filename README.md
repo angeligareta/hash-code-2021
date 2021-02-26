@@ -13,7 +13,7 @@ Given the description of a city plan and planned paths for all cars in that city
 More details on [docs/problem.pdf](docs/problem.pdf).
 
 ## Solution
-The implemented solution consisted in estimating a demand for each street, based on the number of cars that will pass through that street. To generate the intersections,
+The [implemented solution](src/main.py) consisted in estimating a demand for each street, based on the number of cars that will pass through that street. To generate the intersections,
 for each one, we normalize all the demands of the streets that have that intersection at the end, and we give to each street a proportional time to their normalized demand. 
 It was also tried taking into account the street duration (also normalized) but the results were not as good as just analyzing the demand.
 
